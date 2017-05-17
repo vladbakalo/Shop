@@ -8,3 +8,5 @@ Service, Repository - describe layer to for data acses
 UI - asp.Net MVC layer
 
 Used: Entity Framework, Ninject, JavaScript, Google Map Api, MSSQL Database, LINQ, jQuery, html, Razor
+
+sqriptShop.sql - script of my database
