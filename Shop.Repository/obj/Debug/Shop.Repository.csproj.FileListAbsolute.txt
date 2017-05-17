@@ -27,3 +27,15 @@ C:\Users\Админ\Documents\Projects\Shop\Shop.Repository\bin\Debug\EntityFram
 C:\Users\Админ\Documents\Projects\Shop\Shop.Repository\obj\Debug\Shop.Repository.csprojResolveAssemblyReference.cache
 C:\Users\Админ\Documents\Projects\Shop\Shop.Repository\obj\Debug\Shop.Repository.dll
 C:\Users\Админ\Documents\Projects\Shop\Shop.Repository\obj\Debug\Shop.Repository.pdb
+C:\Users\Владислав\Downloads\Shop\Shop\Shop.Repository\bin\Debug\Shop.Repository.dll.config
+C:\Users\Владислав\Downloads\Shop\Shop\Shop.Repository\bin\Debug\Shop.Repository.dll
+C:\Users\Владислав\Downloads\Shop\Shop\Shop.Repository\bin\Debug\Shop.Repository.pdb
+C:\Users\Владислав\Downloads\Shop\Shop\Shop.Repository\bin\Debug\Shop.Repository.dll.CodeAnalysisLog.xml
+C:\Users\Владислав\Downloads\Shop\Shop\Shop.Repository\bin\Debug\Shop.Repository.dll.lastcodeanalysissucceeded
+C:\Users\Владислав\Downloads\Shop\Shop\Shop.Repository\bin\Debug\EntityFramework.dll
+C:\Users\Владислав\Downloads\Shop\Shop\Shop.Repository\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Владислав\Downloads\Shop\Shop\Shop.Repository\bin\Debug\EntityFramework.xml
+C:\Users\Владислав\Downloads\Shop\Shop\Shop.Repository\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Владислав\Downloads\Shop\Shop\Shop.Repository\obj\Debug\Shop.Repository.csprojResolveAssemblyReference.cache
+C:\Users\Владислав\Downloads\Shop\Shop\Shop.Repository\obj\Debug\Shop.Repository.dll
+C:\Users\Владислав\Downloads\Shop\Shop\Shop.Repository\obj\Debug\Shop.Repository.pdb

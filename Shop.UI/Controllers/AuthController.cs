@@ -17,9 +17,7 @@ namespace Shop.UI.Controllers
         private readonly UserManager<AppUser, int> userManager;
 
         public AuthController()
-            : this(Startup.UserManagerFactory.Invoke())
-        {
-        }
+            : this(Startup.UserManagerFactory.Invoke()){}
 
         public AuthController(UserManager<AppUser, int> userManager)
         {
@@ -33,7 +31,6 @@ namespace Shop.UI.Controllers
             {
                 ReturnUrl = returnUrl
             };
-
             return View(model);
         }
 
@@ -56,11 +53,11 @@ namespace Shop.UI.Controllers
 
                 return Redirect(GetRedirectUrl(model.ReturnUrl));
             }
-
             // user authN failed
             ModelState.AddModelError("", "Invalid email or password");
             return View();
         }
+
         private string GetRedirectUrl(string returnUrl)
         {
             if (string.IsNullOrEmpty(returnUrl) || !Url.IsLocalUrl(returnUrl))
@@ -99,7 +96,6 @@ namespace Shop.UI.Controllers
                 FirstName = model.FirstName,
                 LastName = model.LastName,
                 DateBirthday = DateTime.Now
-                // Country = model.Country
             };
 
             var result = await userManager.CreateAsync(user, model.Password);
