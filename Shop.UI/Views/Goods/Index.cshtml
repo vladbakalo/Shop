@@ -1,0 +1,57 @@
+﻿@model IEnumerable<Shop.UI.Models.ViewModelGood>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Goods</h2>
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        string myLink = "/Goods/Detail/" + item.GoodId;
+        <div id="dataListItem" class="col-xs-12 col-sm-6 col-md-4">
+            @if(item.PhotoPath == null)
+            {
+                <a href="@myLink" title="myLink">
+                    <img src="~/Content/uploads/No_image_available.svg" width="100%"/>
+                </a>
+            }
+            else
+            {
+                <a href="@myLink" title="myLink">
+                    <img src="@item.PhotoPath" height="300"/>
+                </a>
+            }
+            <br/>
+            <p class="clip">
+                @Html.DisplayFor(p => item.GoodName)
+                Цена @Html.DisplayFor(p => item.PriceUsd)
+                Остаток @Html.DisplayFor(p => item.Rest)
+            </p>
+            <div>
+                <button type="button" id="cart" data-id="@item.GoodId" class="btn btn-primary cart">
+                    Добавить в корзину
+                </button>
+            </div>
+        </div>
+    }
+</div>
+<style>
+    p.clip{
+        white-space:nowrap;
+        overflow:hidden;
+        padding:5px;
+        text-overflow:ellipsis;
+    }
+</style>
+
+<script src="~/Scripts/jquery-2.2.3.min.js"></script>
+<script>
+    $(function () {
+        $(".cart").click(function () {
+            var id = $(this).attr("data-id");
+            $.get('/Goods/Cart/' + id);
+        });
+    });
+</script>
